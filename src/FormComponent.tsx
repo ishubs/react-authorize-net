@@ -43,11 +43,11 @@ const PayButton = styled.button(props => ({
   '&:hover': {
     cursor: !props.disabled ? 'pointer' : 'not-allowed'
   },
-  backgroundColor: '#f6a4eb',
-  border: '1px solid #2e6da4',
+  backgroundColor: '#FFF8FB',
+  border: '1px solid #FFF8FB',
   borderRadius: '4px',
   boxShadow:
-    '0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #ffb9f6',
+    'rgba(255, 0, 131, 0.5) 0px 10px 40px -10px !important',
   color: 'white',
   fontSize: '1.1em',
   opacity: props.disabled ? 0.9 : 1,
@@ -183,7 +183,7 @@ const FormComponent: React.FC<FormComponentProps> = ({ style, ...props }) => {
       style={style && style.form}
       flexWrap="wrap"
       mb={4}
-      bg="#6772e5"
+      bg="#FFF8FB"
       p={[3, 5] as any}
       justifyContent="center"
     >
